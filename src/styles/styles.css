@@ -1,4 +1,7 @@
 @import url('./contact-us.css');
+@import url('./about-us.css');
+@import url('./gallery.css');
+@import url('./social-media.css');
 
 *,
 *::before,
@@ -7,7 +10,7 @@
 }
 
 html {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   scroll-behavior: smooth;
 }
 
@@ -117,10 +120,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-   width: 24px;
+  width: 24px;
   height: 24px;
 }
-  
+
 .icon-menu {
   fill: #2e2f42;
 }
@@ -132,7 +135,7 @@ img {
 }
 
 @media screen and (max-width: 1023px) {
-  .nav-content  {
+  .nav-content {
     display: none;
   }
 }
@@ -190,7 +193,6 @@ img {
 
 /* BURGER-MENU END */
 
-
 /* HERO HERO HERO HERO HERO HERO HERO HERO HERO HERO*/
 .hero {
   padding: 100px 0 150px;
@@ -214,13 +216,13 @@ img {
   flex-direction: row;
   justify-content: left;
   background-image: linear-gradient(
-    to right, 
-    lavenderblush 0%, 
-    /* lavenderblush 50%, */
-    transparent 50%,
-    transparent 100%), 
+      to right,
+      lavenderblush 0%,
+      /* lavenderblush 50%, */ transparent 50%,
+      transparent 100%
+    ),
     url(../images/background-main.jpg);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 150px 0 150px;
@@ -230,11 +232,11 @@ img {
   text-align: center;
   font-size: 35px;
   margin: 0;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 .hero-text {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   font-size: 25px;
   text-align: center;
   margin: 0;
@@ -252,16 +254,14 @@ img {
   border: 1px solid grey;
   box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: background-
-  color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background- color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .learn-more-link {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 20px;
   text-decoration: none;
   color: #2e2f42;
-
 }
 
 .learn-more-button:focus,
@@ -270,8 +270,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-
-
   .hero-container {
     max-width: 450px;
     margin: 0;
@@ -296,11 +294,11 @@ img {
   .hero-title {
     text-align: center;
     font-size: 60px;
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', cursive;
   }
 
   .hero-text {
-    font-family: "Dancing Script", cursive;
+    font-family: 'Dancing Script', cursive;
   }
 
   .learn-more-button {
@@ -308,7 +306,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: pink;
-    font-family: "Playfair Display", serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     border-radius: 40px;
     width: 200px;
@@ -323,235 +321,6 @@ img {
 
 /* HERO END HERO END HERO END HERO END HERO END HERO END*/
 
-/* ABOUT US */
-.about-us {
-  padding: 0 0 100px;
-  background-color: #f8f8f8;
-}
-
-.about-us-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.about-us-content {
-  border: 1px solid #2e2f42;
-  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
-  border-top: none;
-  border-radius: 4px;
-  max-width: 400px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-us-cont {
-    padding: 150px 0;
-    gap: 100px
-  }
-
-  .about-us-content {
-    max-width: 500px;
-  }
-}
-
-.about-us-pict {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.about-us-desc {
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
-  padding: 45px 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-us-desc {
-    font-size: 18px;
-    padding: 70px 20px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .about-us-desc {
-    font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .desktop-pict {
-    display: none;
-  }
-}
-
-.desktop-pict {
-  width: 100%;
-  background-size: cover;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-@media screen and (min-width: 1024px) {
-  .about-us-pictures {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
-.explore-menu-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ebedee;
-  border-radius: 40px;
-  width: 220px;
-  height: 50px;
-  cursor: pointer;
-  border: 1px solid grey;
-  box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
-      0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.explore-menu-link {
-  font-family: "Playfair Display", serif;
-  font-size: 20px;
-  text-decoration: none;
-  color: #2e2f42;
-}
-
-.explore-menu-button:focus,
-.explore-menu-button:hover {
-  background-color: #f5fffa;
-}
-/* ABOUT US END */
-
-/* GALLERY */
-.gallery-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 70px 20px;
-}
-
-.gallery-title {
-  font-family: "Dancing Script", cursive;
-  font-size: 35px;
-  letter-spacing: 0.01em;
-  margin-bottom: 50px;
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery-title {
-    font-size: 50px;
-  }
-}
-
-.gallery-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-}
-
-.gallery-photo {
-  width: 100%;
-  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-@media screen and (min-width: 768px) {
-  .gallery-list  {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-  }
-
-  .gallery-list-item {
-    flex-basis: calc((100% - 24px) / 2);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery-list  {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .gallery-list-item {
-    flex-basis: calc((100% - 48px) / 3);
-  }
-}
-
-/* GALLERY END */
-
-/* SOCIAL MEDIA*/
-
-.social-media-container {
-  padding: 50px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-.social-media-title {
-  font-size: 25px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.social-media-icons {
-  display: flex;
-  gap: 30px;
-  cursor: pointer;
-}
-
-.social-icon-cont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: pink;
-  width: 40px;
-  height: 40px;
-  border: 1px solid pink;
-  border-radius: 50%;
-  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-}
-
-.social-icon {
-  fill: #ffffff;
-}
-
-.social-icon-cont:hover {
-  background-color: #FF69B4;
-  border-color: #FF69B4;
-}
-
-/* SOCIAL MEDIA END*/
 /* FOOTER */
 .footer {
   background-color: #ffffff;
@@ -586,7 +355,7 @@ img {
   height: 24px;
   border: 1px solid pink;
   border-radius: 50%;
-  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .footer-icon {
@@ -594,8 +363,8 @@ img {
 }
 
 .social-icon-cont:hover {
-  background-color: #FF69B4;
-  border-color: #FF69B4;
+  background-color: #ff69b4;
+  border-color: #ff69b4;
 }
 
 .footer-link {
@@ -604,9 +373,6 @@ img {
   font-size: 18px;
 }
 /* FOOTER END */
-
-
-
 
 /* Pages Pages Pages Pages */
 
@@ -633,13 +399,13 @@ img {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .menu-title {
   text-align: center;
   font-size: 70px;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   margin-bottom: 40px;
 }
 
@@ -647,7 +413,7 @@ img {
   height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("../images/about-us.jpg");
+  background-image: url('../images/about-us.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -687,7 +453,7 @@ img {
   height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("../images/gallery-page/mouse-cake.JPG");
+  background-image: url('../images/gallery-page/mouse-cake.JPG');
   background-size: cover;
   background-position: center;
   letter-spacing: 1px;
@@ -713,7 +479,7 @@ img {
   height: 200px;
   text-align: center;
   font-size: 70px;
-  background-image: url("../images/cupcakes-bcg.jpg");
+  background-image: url('../images/cupcakes-bcg.jpg');
   background-size: cover;
   background-position: center;
   letter-spacing: 1px;
@@ -725,70 +491,3 @@ img {
   margin-top: 0;
 }
 
-
-/* Contact us */
-/* #general-inquiry {
-  height: 800px;
-  margin: 0;
-}
-.contact-us-title {
-  text-align: center;
-  font-size: 40px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  font-family: "Dancing Script", cursive;
-}
-.form {
-  margin: 0;
-}
-.general-inquiry-container {
-  box-sizing: border-box;
-  width: 500px;
-  height: 600px;
-  border-radius: 5px;
-  background-color: #f7cac9;
-  padding: 20px;
-  margin: 0 auto;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-input[type="submit"] {
-  background-color: #ffe3e7;
-  color: black;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type="submit"]:hover {
-  background-color: #70e0b3;
-}
-
-@media screen and(max-width:1100px) {
-  .body {
-    padding: 0;
-  }
-  .box {
-    width: 100%;
-    height: 300px;
-    background-color: #ffffff;
-    border: 3px solid pink;
-  }
-  .title-logo {
-    display: inline-block;
-    width: 100%;
-    height: 415px;
-    object-fit: cover;
-    object-position: center;
-  }
-} */

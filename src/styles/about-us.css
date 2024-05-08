@@ -1,0 +1,116 @@
+.about-us {
+  padding: 100px 0 100px;
+  background-color: #f8f8f8;
+}
+
+.about-us-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.about-us-content {
+  border: 1px solid #2e2f42;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
+  border-top: none;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.about-us-pict {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.about-us-desc {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  padding: 45px 20px;
+}
+
+.desktop-pict {
+  width: 100%;
+  background-size: cover;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.explore-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebedee;
+  border-radius: 40px;
+  width: 220px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid grey;
+  box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
+      0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.explore-menu-link {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #2e2f42;
+}
+
+.explore-menu-button:focus,
+.explore-menu-button:hover {
+  background-color: #f5fffa;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-cont {
+    padding: 150px 0;
+    gap: 100px
+  }
+
+  .about-us-content {
+    max-width: 500px;
+  }
+
+    .about-us-desc {
+    font-size: 18px;
+    padding: 70px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-us-desc {
+    font-size: 22px;
+  }
+
+  .about-us-pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .desktop-pict {
+    display: none;
+  }
+}

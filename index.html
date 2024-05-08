@@ -14,8 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script type="module" crossorigin src="/little_home_bakery/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/little_home_bakery/assets/index-34937f30.css">
+    <link rel="modulepreload" crossorigin href="/little_home_bakery/assets/vendor-df8d3bcd.js">
+    <link rel="stylesheet" href="/little_home_bakery/assets/index-cca6b26c.css">
   </head>
 
   <body>
@@ -33,7 +35,7 @@
           <a class="nav__link" href="./index.html">Home</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="./menu.html">Menu</a>
+          <a class="nav__link" href="../menu.html">Menu</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#gallery">Gallery</a>
@@ -88,17 +90,49 @@
   <div class="container about-us-cont">
     <h1 class="visually-hidden">About us</h1>
     <div class="about-us-content">
-      <div class="about-us-pictures">
-        <img class="about-us-pict desktop-pict" src="../images/about-us-1.jpg" alt="About-us">
-        <img class="about-us-pict" src="../images/about-us-picture.jpg" alt="About us">
-        <img class="about-us-pict desktop-pict" src="../images/about-us-picture-3.jpg" alt="About-us">
+      <div class="swiper swiper-container about-us-pictures">
+        <ul class="swiper-wrapper swiper-list">
+          <li class="swiper-slide">
+            <img
+              class="about-us-pict"
+              src="../images/about-us/about-us-1.jpg"
+              alt="About-us"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              class="about-us-pict"
+              src="../images/about-us/about-us-2.jpg"
+              alt="About us"
+               />
+          </li>
+          <li class="swiper-slide">
+            <img
+              class="about-us-pict"
+              src="../images/about-us/about-us-3.jpg"
+              alt="about-us-pict"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              class="about-us-pict"
+              src="../images/about-us/about-us-4.jpg"
+              alt="about-us-pict"
+            />
+          </li>
+        </ul>
+        <div class="swiper-pagination swiper-bullet"></div>
+        <div class="swiper-button-prev swiper-button"></div>
+        <div class="swiper-button-next swiper-button"></div>
       </div>
+
       <p class="about-us-desc">Welcome to our bakery! Treat yourself to our delicious macarons with wonderful
         flavors and a satisfying crunch.
         Experience the beauty of our cakes, each one a masterpiece of taste and design.
         Whether you love macarons or cakes, our bakery is the perfect spot for tasty treats.
         Check out our menu and take home some artisanal baked goods.
       </p>
+
     </div>
     <div class="explore-menu-button">
       <a class="explore-menu-link" href="#menu">Explore menu</a>
@@ -199,6 +233,7 @@
   </div>
 </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@0.11.0/dist/hls.min.js"></script>
     
   </body>
 </html>

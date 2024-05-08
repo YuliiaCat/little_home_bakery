@@ -29,28 +29,27 @@
   box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.15);
   border-top: none;
   border-radius: 4px;
-  max-width: 400px;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 500px) {
+  .about-us-content {
+    max-width: 400px;
+  }
 }
 
 .about-us-pict {
+  display: block;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
 
 .about-us-desc {
   text-align: center;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.02em;
   padding: 45px 20px;
-}
-
-.desktop-pict {
-  width: 100%;
-  background-size: cover;
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .explore-menu-button {
@@ -80,18 +79,29 @@
   background-color: #f5fffa;
 }
 
+.swiper .swiper-button {
+  color: #f5fffa;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #f5fffa;
+}
+
 @media screen and (min-width: 768px) {
-  .about-us-cont {
+  .about-us {
     padding: 150px 0;
-    gap: 100px
+  }
+
+  .about-us-cont {
+    gap: 100px;
   }
 
   .about-us-content {
-    max-width: 500px;
+    max-width: 700px;
   }
 
-    .about-us-desc {
-    font-size: 18px;
+  .about-us-desc {
+    font-size: 20px;
     padding: 70px 20px;
   }
 }
@@ -109,8 +119,12 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .desktop-pict {
-    display: none;
+@media screen and (min-width: 1440px) {
+  .about-us-content {
+    max-width: 1200px;
+  }
+
+  .about-us-desc {
+    font-size: 24px;
   }
 }

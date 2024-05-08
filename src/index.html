@@ -1,24 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Home Bakery</title>
+    <link rel="icon" href="./images/Logo Round PNG.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./scripts/main.js" defer></script>
   </head>
+
   <body>
-    <load ="partials/header.html" />
+    <header class="header">
+      <div class="top-bar nav">
+        <a class="header-logo" href="index.html"></a>
+        <a href="#" class="icon-menu-cont" id="menu-toggle">
+          <svg class="icon-menu" width="20" height="20">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </a>
+        <nav class="nav-content">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./menu.html">Menu</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Gallery</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./partials/contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <aside class="burger-menu" id="burger-menu">
+      <div class="burger-menu-container container">
+        <div class="top-bar">
+          <a class="header-logo" href="index.html"></a>
+          <a href="#" class="icon-menu-cont" id="menu-close">
+            <svg class="icon-close" width="14" height="14">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="burger-nav-content">
+          <ul class="burger-nav-list">
+            <li class="burger-nav-item">
+              <a class="burger-nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="burger-nav-item">
+              <a class="burger-nav-link" href="./menu.html">Menu</a>
+            </li>
+            <li class="burger-nav-item">
+              <a class="burger-nav-link" href="#">Gallery</a>
+            </li>
+            <li class="burger-nav-item">
+              <a class="burger-nav-link" href="./contact-us.html">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main>
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="hero-title">A Special Desserts <br>For A Special Events</h1>
+          <p class="hero-text">We use only the best ingredients to make the perfect sweets.
+          </p>
+          <div class="learn-more-button">
+            <a class="learn-more-link" href="#gallery">Learn more</a>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="about-us">
+        <div class="container about-us-cont">
+          <h1 class="visually-hidden">About us</h1>
+          <div class="about-us-content">
+            <div class="about-us-pictures">
+              <img class="about-us-pict desktop-pict" src="./images/about-us-1.jpg" alt="About-us">
+              <img class="about-us-pict" src="./images/about-us-picture.jpg" alt="About us">
+              <img class="about-us-pict desktop-pict" src="./images/about-us-picture-3.jpg" alt="About-us">
+            </div>
+            <p class="about-us-desc">Welcome to our bakery! Treat yourself to our delicious macarons with wonderful
+              flavors and a satisfying crunch.
+              Experience the beauty of our cakes, each one a masterpiece of taste and design.
+              Whether you love macarons or cakes, our bakery is the perfect spot for tasty treats.
+              Check out our menu and take home some artisanal baked goods.
+            </p>
+          </div>
+          <div class="explore-menu-button">
+            <a class="explore-menu-link" href="#menu">Explore menu</a>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="container gallery-container">
+          <h2 class="gallery-title">Gallery</h2>
+          <div class="gallery-container-photos">
+            <ul class="gallery-list">
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/cheesecake.jpg" alt="pistachio cheesecake">
+              </li>
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/honey-cake.jpg" alt="honey-cake">
+              </li>
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/lemon-macarons.jpg" alt="lemon-macarons">
+              </li>
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/cupcakes.jpg" alt="cupcakes">
+              </li>
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/eclair.JPG" alt="eclair">
+              </li>
+              <li class="gallery-list-item">
+                <img class="gallery-photo" src="./images/gallery-main/macarons-box.JPG" alt="macarons-box">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
-    </section>
+      <load src="partials/contact-us.html" />
 
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
-
-    <script type="module" src="./main.js"></script>
+      <section id="social-media">
+        <div class="social-media-container container">
+          <h2 class="social-media-title">Follow our latest news and updates</h2>
+          <div class="social-media-icons">
+            <a class="social-icon-cont" href="https://www.instagram.com/little_home_bakery2023" target="_blank">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="social-icon-cont" href="https://www.facebook.com/@little_home_bakery" target="_blank">
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <h2 class="contact-info-title">Contact info</h2>
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <div class="footer-icon-cont">
+              <svg class="footer-icon" width="22" height="22">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+            <a class="footer-link" href="mailto:littlehomebakery2023@gmail.com">
+              littlehomebakery2023@gmail.com
+            </a>
+          </li>
+          <li class="contact-info-item">
+            <div class="footer-icon-cont">
+              <svg class="footer-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-location"></use>
+              </svg>
+            </div>
+            <a class="footer-link" href="#">
+              Miami, USA
+            </a>
+          </li>
+        </ul>
+        <p class="rights">&copy; Little Home Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>

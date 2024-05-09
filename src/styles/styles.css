@@ -36,7 +36,8 @@ p {
   margin: 0;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
   padding-left: 0;
 }
@@ -61,7 +62,7 @@ img {
 @media screen and (min-width: 1024px) {
   .container {
     max-width: 1440px;
-    padding: 0 15px;
+    padding: 100px 30px;
   }
 }
 

@@ -1,3 +1,10 @@
+.header {
+  border-bottom: 1px solid rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .top-bar {
   width: 100%;
   display: flex;
@@ -45,6 +52,7 @@
   width: 24px;
   height: 24px;
 }
+
 
 .icon-menu {
   fill: #2e2f42;

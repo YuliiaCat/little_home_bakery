@@ -13,6 +13,30 @@
   margin-bottom: 50px;
 }
 
+.gallery-nav {
+  background-color: #f8f8f8;
+  border: 3px solid #FFE3E7;
+  margin-bottom: 60px;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.gallery-nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery-nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2e2f42;
+  font-weight: 500;
+}
+
 .gallery-list {
   list-style: none;
   display: flex;
@@ -28,6 +52,14 @@
 }
 
 @media screen and (min-width: 768px) {
+  .gallery-title {
+    font-size: 60px;
+  }
+
+  .gallery-nav-list {
+    gap: 30px;
+  }
+
   .gallery-list  {
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,11 +72,34 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .gallery-title {
-    font-size: 50px;
+  .gallery-container {
+    padding: 100px 50px;
   }
 
-    .gallery-list  {
+  .gallery-title {
+    font-size: 70px;
+  }
+
+  .gallery-nav {
+    padding: 10px 40px;
+  }
+
+  .gallery-nav-list {
+    gap: 70px;
+  }
+
+  .gallery-all-cakes:hover,
+  .gallery-all-cakes:active {
+    background-color: lavenderblush;
+    border-radius: 30px;
+  }
+
+  .gallery-nav-link  {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .gallery-list  {
     flex-direction: row;
     flex-wrap: wrap;
   }

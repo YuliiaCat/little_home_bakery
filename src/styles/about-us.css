@@ -32,12 +32,6 @@
   max-width: 320px;
 }
 
-@media screen and (min-width: 500px) {
-  .about-us-content {
-    max-width: 400px;
-  }
-}
-
 .about-us-pict {
   display: block;
   border-top-left-radius: 4px;
@@ -64,7 +58,7 @@
   border: 1px solid grey;
   box-shadow: 0 1px 6px 0 #2e2f4214, 0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .explore-menu-link {
@@ -85,6 +79,12 @@
 
 .swiper .swiper-pagination-bullet {
   background-color: #f5fffa;
+}
+
+@media screen and (min-width: 500px) {
+  .about-us-content {
+    max-width: 400px;
+  }
 }
 
 @media screen and (min-width: 768px) {

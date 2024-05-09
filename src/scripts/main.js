@@ -59,3 +59,22 @@ const swiper = new Swiper('.swiper', {
 });
 
 //swiper end
+
+//gallery nav
+const buttons = document.querySelectorAll('.gallery-nav-item');
+const galleryLinks = document.querySelectorAll('.gallery-nav-link');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function () {
+    this.style.backgroundColor = 'lavenderblush';
+  });
+});
+
+galleryLink.addEventListener("submit", handleSubmit);
+
+galleryLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    event.preventDefault();
+  });
+});
+//gallery nav end

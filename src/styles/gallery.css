@@ -41,7 +41,7 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 10px;
 }
 
 .gallery-list-item {
@@ -68,7 +68,7 @@
 
   .gallery-list  {
     grid-template-columns: repeat(4, 1fr);
-    gap: 72px 24px;
+    gap: 18px;
   }
 
   .gallery-list-item {
